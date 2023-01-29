@@ -8,6 +8,7 @@ export default function Home() {
       <p>
         Reach google here (<a href="https://google.com">google.com</a>)
       </p>
+      <p>Experiment with broken Gatsby Cloud build...</p>
     </main>
   );
 }
