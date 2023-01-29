@@ -3372,7 +3372,7 @@ packages:
       '@parcel/diagnostic': 2.8.2
       '@parcel/fs': 2.8.2_@parcel+core@2.8.2
       '@parcel/logger': 2.8.2
-      '@parcel/types': 2.8.2_@parcel+core@2.8.2
+      '@parcel/types': 2.8.2
       '@parcel/utils': 2.8.2
       '@parcel/workers': 2.8.2_@parcel+core@2.8.2
       semver: 5.7.1
@@ -3477,6 +3477,18 @@ packages:
       json5: 2.2.3
     transitivePeerDependencies:
       - '@parcel/core'
+    dev: false
+
+  /@parcel/types/2.8.2:
+    resolution: {integrity: sha512-HAYhokWxM10raIhqaYj9VR9eAvJ+xP2sNfQ1IcQybHpq3qblcBe/4jDeuUpwIyKeQ4gorp7xY+q8KDoR20j43w==}
+    dependencies:
+      '@parcel/cache': 2.8.2_@parcel+core@2.8.2
+      '@parcel/diagnostic': 2.8.2
+      '@parcel/fs': 2.8.2_@parcel+core@2.8.2
+      '@parcel/package-manager': 2.8.2_@parcel+core@2.8.2
+      '@parcel/source-map': 2.1.1
+      '@parcel/workers': 2.8.2_@parcel+core@2.8.2
+      utility-types: 3.10.0
     dev: false
 
   /@parcel/types/2.8.2_@parcel+core@2.8.2:
@@ -5673,8 +5685,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      JSONStream: 1.3.5
       is-text-path: 1.0.1
+      JSONStream: 1.3.5
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -11248,12 +11260,6 @@ packages:
   /react-dev-utils/12.0.1_a6ujobsf6eh7xju4ksk76iudrq:
     resolution: {integrity: sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==}
     engines: {node: '>=14'}
-    peerDependencies:
-      typescript: '>=2.7'
-      webpack: '>=4'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
     dependencies:
       '@babel/code-frame': 7.18.6
       address: 1.2.2
@@ -11284,7 +11290,9 @@ packages:
     transitivePeerDependencies:
       - eslint
       - supports-color
+      - typescript
       - vue-template-compiler
+      - webpack
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
