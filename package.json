@@ -1,15 +1,11 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "name": "ah-tg-gatsby",
+  "description": "'Arkham Horror: The Gathering' is a pet project to sort cards of 'Arkham Horror: The Card Game'.",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "author": "Martin Boucher <boutchitos@yahoo.com> (https://github.com/boutchitos)",
   "license": "MIT",
-  "keywords": [
-    "gatsby",
-    "starter",
-    "typescript"
-  ],
+  "keywords": [],
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
