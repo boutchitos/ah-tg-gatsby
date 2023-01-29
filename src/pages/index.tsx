@@ -6,8 +6,7 @@ export default function Home() {
       <Title>Hello TypeScript!</Title>
       <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
       <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
+        Reach google here (<a href="https://google.com">google.com</a>)
       </p>
     </main>
   );
