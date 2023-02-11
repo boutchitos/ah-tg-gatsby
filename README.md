@@ -54,7 +54,7 @@ npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
 To start the project locally, run:
 
 ```bash
-pnpm start
+npm start
 ```
 
 Open `http://localhost:8000` with your browser to see the result.
@@ -64,7 +64,7 @@ Open `http://localhost:8000` with your browser to see the result.
 ### Requirements
 
 - Node.js >= 18
-- pnpm 7
+- npm 9.4.0 (working, don't know if locked)
 
 ### Directory Structure
 
@@ -76,15 +76,15 @@ Open `http://localhost:8000` with your browser to see the result.
 
 ### Scripts
 
-- `pnpm start` — Starts the application in development mode at `http://localhost:8000`.
-- `pnpm build` — Compile your application and make it ready for deployment.
-- `pnpm serve` — Serve the production build of your site
-- `pnpm clean` — Wipe out the cache (`.cache` folder).
-- `pnpm type-check` — Validate code using TypeScript compiler.
-- `pnpm lint` — Runs ESLint for all files in the `src` directory.
-- `pnpm format` — Runs Prettier for all files in the `src` directory.
-- `pnpm test` — Run tests with Vitest.
-- `pnpm test:watch` — Run tests on watch mode.
+- `npm run start` — Starts the application in development mode at `http://localhost:8000`.
+- `npm run build` — Compile your application and make it ready for deployment.
+- `npm run serve` — Serve the production build of your site
+- `npm run clean` — Wipe out the cache (`.cache` folder).
+- `npm run type-check` — Validate code using TypeScript compiler.
+- `npm run lint` — Runs ESLint for all files in the `src` directory.
+- `npm run format` — Runs Prettier for all files in the `src` directory.
+- `npm run test` — Run tests with Vitest.
+- `npm run test:watch` — Run tests on watch mode.
 
 ### Path Mapping
 
@@ -97,7 +97,11 @@ import { Button } from '@/components/Button';
 import avatar from '@/static/avatar.png';
 ```
 
-### Switch to Yarn/npm
+### Switched to npm
+
+Before, we were using pnpm but Gatsy Cloud fails alot. We try to use plain npm.
+
+### This is how to plug pnpm back:
 
 This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config` file).
 
